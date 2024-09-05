@@ -18,6 +18,30 @@ body {
     background-color: var(--Very-dark-blue)
 }
 
+#background-work {
+    background-color: var(--Light-redWork);
+}
+
+#background-play {
+    background-color: var(--Soft-bluePlay);
+}
+
+#background-study {
+    background-color: var(--Light-redStudy);
+}
+
+#background-exercise {
+    background-color: var(--Lime-greenExercise);
+}
+
+#background-social {
+    background-color: var(--Violet-social);
+}
+
+#background-self-care {
+    background-color: var(--Soft-orangeSelfCare);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
