@@ -14,6 +14,10 @@
     --Pale-blue: hsl(236, 100%, 87%);
 }
 
+body {
+    background-color: var(--Very-dark-blue)
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
