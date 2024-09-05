@@ -1,0 +1,25 @@
+:root {
+    --Blue: hsl(246, 80%, 60%);
+
+    --Light-redWork: hsl(15, 100%, 70%);
+    --Soft-bluePlay: hsl(195, 74%, 62%);
+    --Light-redStudy: hsl(348, 100%, 68%);
+    --Lime-greenExercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orangeSelfCare: hsl(43, 84%, 65%);
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-blue: hsl(236, 100%, 87%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    transform: translateY(41rem);
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
