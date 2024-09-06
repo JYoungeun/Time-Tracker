@@ -6,7 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -15,24 +17,27 @@
 <body>
   <main>
     <section id="profile">
-      <div class="profile-container">
-        <img src="images/image-jeremy.png" alt="Jeremy profile picture" />
-        Report for
-        Jeremy Robson
-  
-        Daily
-        Weekly
-        Monthly
+      <div class="container profile">
+        <img id="profile-pic" src="images/image-jeremy.png" alt="Jeremy profile picture" />
+        <div id="profile-box">
+          <p>Report for</p>
+          <p>Jeremy Robson</p>
+        </div>
+        <div id="choices-box">
+          Daily
+          Weekly
+          Monthly
+        </div>
       </div>
     </section>
     <section id="work">
       <div class="container">
-        <div id="background-work">
+        <div id="background-work" class="item background">
           <img src="images/icon-work.svg" />
         </div>
-        <div>
+        <div class="item text-box">
           Work
-          <img src="images/icon-ellipsis.svg" />
+          <img class="ellipsis" src="images/icon-ellipsis.svg" />
           5hrs <!-- daily -->
           Previous - 7hrs <!-- daily -->
           32hrs <!-- weekly -->
@@ -44,77 +49,87 @@
     </section>
     <section id="play">
       <div class="container">
-        <div id="background-play">
+        <div id="background-play" class="item background">
           <img src="images/icon-play.svg" />
         </div>
-        Play
-        <img src="images/icon-ellipsis.svg" />
-        1hr <!-- daily -->
-        Previous - 2hrs <!-- daily -->
-        10hrs <!-- weekly -->
-        Previous - 8hrs <!-- weekly -->
-        23hrs <!-- monthly -->
-        Previous - 29hrs <!-- monthly -->
+        <div  class="item text-box">
+          Play
+          <img class="ellipsis" src="images/icon-ellipsis.svg" />
+          1hr <!-- daily -->
+          Previous - 2hrs <!-- daily -->
+          10hrs <!-- weekly -->
+          Previous - 8hrs <!-- weekly -->
+          23hrs <!-- monthly -->
+          Previous - 29hrs <!-- monthly -->
+        </div>
       </div>
     </section>
     <section id="study">
       <div class="container">
-        <div id="background-study">
+        <div id="background-study" class="item background">
           <img src="images/icon-study.svg" />
         </div>
-        Study
-        <img src="images/icon-ellipsis.svg" />
-        0hrs <!-- daily -->
-        Previous - 1hr <!-- daily -->
-        4hrs <!-- weekly -->
-        Previous - 7hrs <!-- weekly -->
-        13hrs <!-- monthly -->
-        Previous - 19hrs <!-- monthly -->
+        <div  class="item text-box">
+          Study
+          <img class="ellipsis" src="images/icon-ellipsis.svg" />
+          0hrs <!-- daily -->
+          Previous - 1hr <!-- daily -->
+          4hrs <!-- weekly -->
+          Previous - 7hrs <!-- weekly -->
+          13hrs <!-- monthly -->
+          Previous - 19hrs <!-- monthly -->
+        </div>
       </div>
     </section>
     <section id="exercise">
       <div class="container">
-        <div id="background-exercise">
+        <div id="background-exercise" class="item background">
           <img src="images/icon-exercise.svg" />
         </div>
-        Exercise
-        <img src="images/icon-ellipsis.svg" />
-        1hr <!-- daily -->
-        Previous - 1hr <!-- daily -->
-        4hrs <!-- weekly -->
-        Previous - 5hrs <!-- weekly -->
-        11hrs <!-- monthly -->
-        Previous - 18hrs <!-- monthly -->
+        <div class="item text-box">
+          Exercise
+          <img class="ellipsis" src="images/icon-ellipsis.svg" />
+          1hr <!-- daily -->
+          Previous - 1hr <!-- daily -->
+          4hrs <!-- weekly -->
+          Previous - 5hrs <!-- weekly -->
+          11hrs <!-- monthly -->
+          Previous - 18hrs <!-- monthly -->
+        </div>
       </div>
     </section>
     <section id="social">
       <div class="container">
-        <div id="background-social">
+        <div id="background-social" class="item background">
           <img src="images/icon-social.svg" />
         </div>
-        Social
-        <img src="images/icon-ellipsis.svg" />
-        1hr <!-- daily -->
-        Previous - 3hrs <!-- daily -->
-        5hrs <!-- weekly -->
-        Previous - 10hrs <!-- weekly -->
-        21hrs <!-- monthly -->
-        Previous - 23hrs <!-- monthly -->
+        <div class="item text-box">
+          Social
+          <img class="ellipsis" src="images/icon-ellipsis.svg" />
+          1hr <!-- daily -->
+          Previous - 3hrs <!-- daily -->
+          5hrs <!-- weekly -->
+          Previous - 10hrs <!-- weekly -->
+          21hrs <!-- monthly -->
+          Previous - 23hrs <!-- monthly -->
+          </div>
       </div>
     </section>
     <section id="self care">
       <div class="container">
-        <div id="background-self-care">
+        <div id="background-self-care" class="item background">
           <img src="images/icon-self-care.svg" />
         </div>
-        Self Care
-        <img src="images/icon-ellipsis.svg" />
-        0hrs <!-- daily -->
-        Previous - 1hr <!-- daily -->
-        2hrs <!-- weekly -->
-        Previous - 2hrs <!-- weekly -->
-        7hrs <!-- monthly -->
-        Previous - 11hrs <!-- monthly -->
+        <div class="item text-box">
+          Self Care
+          <img class="ellipsis" src="images/icon-ellipsis.svg" />
+          0hrs <!-- daily -->
+          Previous - 1hr <!-- daily -->
+          2hrs <!-- weekly -->
+          Previous - 2hrs <!-- weekly -->
+          7hrs <!-- monthly -->
+          Previous - 11hrs <!-- monthly -->
+        </div>
       </div>
     </section>
   </main>
