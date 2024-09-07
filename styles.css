@@ -41,7 +41,7 @@ main {
 
 .profile {
     grid-row: 1/3;
-    width: 15.5rem;
+    width: 16rem;
 }
 
 .profile-box {
@@ -80,7 +80,11 @@ ul > li {
 }
 
 .container {
-    width: 15.5rem;
+    width: 16rem;
+}
+
+.item {
+    height: 5.875rem;
 }
 
 #background-work {
@@ -110,7 +114,7 @@ ul > li {
 .attribution { 
     font-size: 11px; 
     text-align: center;
-    transform: translateY(22rem);
+    transform: translateY(33rem);
 }
     
 .attribution a { 
