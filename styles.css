@@ -57,8 +57,8 @@ main {
 .profile-pic {
     border: 0.18rem solid white;
     border-radius: 9rem;
-    height: 4rem;
-    margin: 0 1.875rem;
+    height: 5.25rem;
+    margin: 1.875rem;
 }
 
 .choices-box {
