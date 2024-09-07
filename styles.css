@@ -71,20 +71,24 @@ ul > li {
     font-size: 1.125rem;
 }
 
-.item {
+.container {
+    width: 16rem;
+}
+
+.time-box {
     background-color: var(--Dark-blue);
+    margin-top: -4.45rem;
+    height: 11.6rem;
+    border-radius: 1rem;
 }
 
 .ellipsis {
     float: right;
 }
 
-.container {
-    width: 16rem;
-}
-
-.item {
-    height: 5.875rem;
+.background {
+    height: 7.17rem;
+    border-radius: 1rem;
 }
 
 #background-work {
