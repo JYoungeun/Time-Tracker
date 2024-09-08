@@ -2,9 +2,24 @@ const dayButton = document.getElementById('buttonDaily');
 const weekButton = document.getElementById('buttonWeekly');
 const monthButton = document.getElementById('buttonMonthly');
 
-const defaultButton = document.getElementById('buttonWeekly');
+document.addEventListener('DOMContentLoaded', () => {
+    weekButton.click();
+    handleButtonClick(weekButton);
+});
+
+function removeHighlight() {
+    dayButton.classList.remove('clicked');
+    weekButton.classList.remove('clicked');
+    monthButton.classList.remove('clicked');
+}
+
+function handleButtonClick(button) {
+    removeHighlight();
+    button.classList.add('clicked');
+}
 
 dayButton.addEventListener('click', () => {
+    handleButtonClick(dayButton)
     document.getElementById('work-time').innerHTML = "5hrs";
     document.getElementById('work-previous').innerHTML = "Previous Day - 7hrs";
     document.getElementById('play-time').innerHTML = "1hr";
@@ -20,6 +35,7 @@ dayButton.addEventListener('click', () => {
 });
 
 weekButton.addEventListener('click', () => {
+    handleButtonClick(weekButton)
     document.getElementById('work-time').innerHTML = "32hrs";
     document.getElementById('work-previous').innerHTML = "Previous Week - 36hrs";
     document.getElementById('play-time').innerHTML = "10hrs";
@@ -34,7 +50,8 @@ weekButton.addEventListener('click', () => {
     document.getElementById('self-care-previous').innerHTML = "Previous Week - 2hrs";
 });
 
-monthButton.addEventListener('click', ()=> {
+monthButton.addEventListener('click', () => {
+    handleButtonClick(monthButton)
     document.getElementById('work-time').innerHTML = "103hrs";
     document.getElementById('work-previous').innerHTML = "Previous Month - 128hrs";
     document.getElementById('play-time').innerHTML = "23hrs";

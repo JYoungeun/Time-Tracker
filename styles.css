@@ -89,11 +89,15 @@ button {
     background-color: var(--Dark-blue);
     border: none;
     font-size: 1.125rem;
+    cursor: pointer;
 }
 
 button:hover {
     color: var(--Desaturated-blue);
-    cursor: pointer;
+}
+
+.clicked {
+    color: var(--Desaturated-blue);
 }
 
 .container {
@@ -183,7 +187,7 @@ button:hover {
     main {
         display: flex;
         flex-direction: column;
-        max-height: 56rem;
+        max-height: 66.5rem;
     }
 
     .profile-box {
