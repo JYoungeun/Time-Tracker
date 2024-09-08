@@ -62,7 +62,7 @@ main {
     margin-top: 2.2rem;
 }
 
-.sub {
+.sub-header {
     color: var(--Pale-blue);
     padding-top: 2.2rem;
     padding-bottom: 0.2rem;
@@ -117,6 +117,19 @@ button {
     float: right;
     margin-top: -2.8rem;
     margin-right: 1.8rem;
+}
+
+.time {
+    font-size: 3.45rem;
+    font-weight: 300;
+    padding: 0.25rem;
+    padding-left: 1.9rem;
+    margin-top: -0.5rem;
+}
+
+.day {
+    color: var(--Pale-blue);
+    padding-left: 1.9rem;
 }
 
 .background {
