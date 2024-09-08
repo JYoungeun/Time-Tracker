@@ -51,6 +51,7 @@ main {
     background-color: var(--Blue);
     border-radius: 1rem;
     height: 22.1rem;
+    padding-left: 2rem;
     z-index: 1;
 }
 
@@ -58,7 +59,18 @@ main {
     border: 0.18rem solid white;
     border-radius: 9rem;
     height: 5.25rem;
-    margin: 1.875rem;
+    margin-top: 2.2rem;
+}
+
+.sub {
+    color: var(--Pale-blue);
+    padding-top: 2.2rem;
+    padding-bottom: 0.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .choices-box {
@@ -71,6 +83,15 @@ main {
 
 ul > li {
     list-style: none;
+    padding-top: 1.2rem;
+    padding-left: 2rem;
+    transform: translateY(65%);
+}
+
+button {
+    color: var(--Desaturated-blue);
+    background-color: var(--Dark-blue);
+    border: none;
     font-size: 1.125rem;
 }
 
@@ -86,8 +107,16 @@ ul > li {
     position: relative;
 }
 
+.title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 1.9rem;
+}
+
 .ellipsis {
     float: right;
+    margin-top: -2.8rem;
+    margin-right: 1.8rem;
 }
 
 .background {
