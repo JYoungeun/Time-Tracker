@@ -5,7 +5,10 @@
 }
 
 :root {
+    --Pale-blue: hsl(236, 100%, 87%);
     --Blue: hsl(246, 80%, 60%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
 
     --Light-redWork: hsl(15, 100%, 70%);
     --Soft-bluePlay: hsl(195, 74%, 62%);
@@ -13,22 +16,17 @@
     --Lime-greenExercise: hsl(145, 58%, 55%);
     --Violet-social: hsl(264, 64%, 52%);
     --Soft-orangeSelfCare: hsl(43, 84%, 65%);
-
-    --Very-dark-blue: hsl(226, 43%, 10%);
-    --Dark-blue: hsl(235, 46%, 20%);
-    --Desaturated-blue: hsl(235, 45%, 61%);
-    --Pale-blue: hsl(236, 100%, 87%);
 }
 
 body {
     color: white;
     background-color: var(--Very-dark-blue);
     font-family: Rubik, sans-serif;
-    min-height: 70rem;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    min-height: 90rem;
 }
 
 main {
@@ -36,8 +34,6 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    max-width: 70rem;
-    min-height: 32rem;
     gap: 1.875rem;
 }
 
@@ -89,10 +85,14 @@ ul > li {
 }
 
 button {
-    color: var(--Desaturated-blue);
+    color: var(--Pale-blue);
     background-color: var(--Dark-blue);
     border: none;
     font-size: 1.125rem;
+}
+
+button:hover {
+    color: var(--Desaturated-blue);
     cursor: pointer;
 }
 
@@ -177,4 +177,66 @@ button {
     
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 48rem) {
+    main {
+        display: flex;
+        flex-direction: column;
+        max-height: 76rem;
+    }
+
+    .profile-box {
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profile-text {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .choices-box {
+        height: 6rem;
+    }
+
+    ul > li {
+        display: inline;
+        position: relative;
+        bottom: -2.85rem;
+        padding: 2.15rem;
+    }
+
+    section {
+        min-width: 24rem;
+    }
+
+    .time-box {
+        height: 8.75rem;
+    }
+
+    .text {
+        margin-top: -1.75rem;
+    }
+
+    .time {
+        font-size: 2.5rem;
+    }
+
+    .day {
+        display: flex;
+        justify-content: right;
+        margin-top: -2.5rem;
+        transform: translateX(6.5%)
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: -19rem;
+        padding: 1rem;
+    }
 }
