@@ -26,7 +26,7 @@ body {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    min-height: 90rem;
+    min-height: 70rem;
 }
 
 main {
@@ -183,7 +183,7 @@ button:hover {
     main {
         display: flex;
         flex-direction: column;
-        max-height: 76rem;
+        max-height: 56rem;
     }
 
     .profile-box {
