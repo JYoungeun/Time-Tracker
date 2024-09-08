@@ -93,6 +93,7 @@ button {
     background-color: var(--Dark-blue);
     border: none;
     font-size: 1.125rem;
+    cursor: pointer;
 }
 
 .container {
@@ -102,7 +103,7 @@ button {
 .time-box {
     background-color: var(--Dark-blue);
     margin-top: -4.45rem;
-    height: 12.25rem;
+    height: 12.415rem;
     border-radius: 1rem;
     position: relative;
 }
